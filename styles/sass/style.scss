@@ -1,0 +1,14 @@
+
+$primaryColor: #FDFA69;
+$secondaryColor: #4CEEA7;
+$tertiaryColor: #effdf3;
+$blackColor: #2C2C2C;
+$baseFont: 'Playfair Display', serif;
+$bodyFont: 'Roboto', sans-serif;
+
+
+@import 'normalized';
+@import 'header';
+@import 'sectionHome';
+@import 'blog';
+@import 'contact';

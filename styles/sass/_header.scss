@@ -1,0 +1,53 @@
+header{
+    background-image: url(../captured-final-assets/header-image.jpg);
+    height: 90vh;
+    position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    font-family: $baseFont;
+}
+
+header .title{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 85%;
+    h1{
+        font-size: 138px;
+        align-self: center;
+        text-align: center;
+        text-transform: uppercase;
+        z-index: 10;
+    }
+}
+
+header .box1{
+    background-image: url(../captured-final-assets/header-box-image.jpg);
+    background-size: cover;
+    background-position: center;
+    border: 30px $primaryColor solid;
+    position: absolute;
+    width: 45%;
+    height: 70%;
+    right: 0;
+    top: 40%;
+}
+
+header ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin-right: 20px;
+    a{
+        text-decoration: none;
+        padding: 0 10px;
+        color: black;
+        font-size: 20px;
+        margin-right: 30px;
+
+        &:hover{
+            border-bottom: 2px $secondaryColor solid;
+        }
+    }
+}

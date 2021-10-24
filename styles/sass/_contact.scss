@@ -1,0 +1,103 @@
+.contactLayout{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.boxLeft2{
+    // align-self: flex-end;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 100px;
+    i{
+        font-size: 20px;
+        padding-right: 20px;
+    }
+    h4{
+        font-size: 26px;
+        letter-spacing: 1px;
+        margin-top: 30px;
+        text-transform: uppercase;
+    }
+    p{
+        font-family: $bodyFont;
+        font-size: 20px;
+        line-height: 32px;
+        padding-top: 0;
+        margin-top: 10px;
+    }
+}
+.contact{
+    display: flex;
+    flex-wrap: wrap;
+    // justify-content: space-around;
+    position: relative;
+    background-image: url(../captured-final-assets/contact-header.jpg);
+    background-repeat: no-repeat;
+    height: 70vh;
+    width: 100%;
+    
+    .boxRight2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        h2{
+            font-family: $baseFont;
+            font-size: 80px;
+            line-height: 92px;
+            text-transform: uppercase;
+        }
+        .getInTouch{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: column;
+            margin-left: 30px;
+            margin-top: 100px;
+            border-left: 20px solid $primaryColor;
+            border-bottom: 20px solid $primaryColor;
+            .nameEmail{
+                width: 100%;
+                margin-bottom: 30px;
+            input[type="text"],
+            input[type="email"]{
+                width: calc(100% / 2 - 40px);
+                resize: none;
+                border: none;
+                border-bottom: 1px solid $secondaryColor;
+                background-color: $tertiaryColor;
+            }
+            input[type="text"]{
+                margin-right: 20px;
+                padding-top: 20px;
+                padding-bottom: 20px;
+            }
+            input[type="text"]::placeholder{
+                color: black;
+                font-size: 20px;
+                line-height: 32px;
+            }
+            input[type="email"]{
+                margin-right: 0;
+            }
+        }
+        textarea{
+            border: 1px solid $secondaryColor;
+            resize: none;
+            height: 200px;
+            width: 90%;
+            font-size: 20px;
+            padding-top: 20px;
+            padding-left: 20px;
+        }
+        button{
+            width: 90%;
+            margin-top: 50px;
+            margin-right: 0px;
+            margin-left: 0px;
+            align-self: flex-start;
+            font-size: 20px;
+            text-transform: uppercase;
+            font-family: $baseFont;
+        }
+        }
+    }
+}

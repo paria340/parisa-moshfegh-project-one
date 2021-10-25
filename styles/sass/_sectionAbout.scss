@@ -1,81 +1,88 @@
-.wrapper{
-    width: 60%;
-    margin: 0 auto;
-}
 .smallDescription{
     display: flex;
     flex-direction: column;
-    font-family: $baseFont;
     margin-top: 150px;
     margin-bottom: 100px;
-    h2{
-        font-size: 42px;
-        align-self: center;
-        letter-spacing: 1px;
-    }
     p{
-        font-family: $bodyFont;
-        font-size: 20px;
         align-self: center;
         padding-top: 30px;
-        line-height: 32px;
     }
     button{
-        background-color: $secondaryColor;
-        font-size: 20px;
-        text-transform: uppercase;
         padding: 10px 20px;
         margin-top: 30px;
         align-self: center;
-        border: none;
-        line-height: 32px;
-        letter-spacing: 1px;
-        font-family: $baseFont;
     }
+}
+
+.containerZigzag{
+    background-color: $whiteColor;
 }
 
 .zigzagcontent{
     display: flex;
     flex-wrap: wrap;
-    margin-bottom: 50px;
-    background-color: $tertiaryColor;
-    margin-top: 100px;
-    h3{
-        font-size: 32px;
-        letter-spacing: 1px;
-    }
+    justify-content: space-between;
+    margin-bottom: 150px;
+    margin-top: 50px;
     .box2{
-        background-image: url(../captured-final-assets/left-image.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 40%;
+        position: relative;
+        .imageOne, .imageTwo{
+            object-fit: cover;
+            width: 500px;
+            height: 350px;
+            z-index: 10;
+            position: absolute;
+        }
+        .backgroundOne{
+            background-color: $primaryColor;
+            width: 500px;
+            height: 350px;
+            position: absolute;
+            top: 30px;
+            left: 30px;
+            
+        }
     }
     .box3{
         width: 50%;
         padding-left: 100px;
+        margin-right: 100px;
     }
     .box4{
-        background-image: url(../captured-final-assets/right-image.jpg);
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-position: center;
-        width: 40%;
+        position: relative;
+        .imageTwo2{
+            width: 500px;
+            height: 350px;
+            z-index: 10;
+            position: relative;
+        }
+        .backgroundTwo{
+            background-color: $primaryColor;
+            width: 500px;
+            height: 350px;
+            position: absolute;
+            top: 30px;
+            right: 35px;
+        }
     }
     .box5{
         direction: rtl;
         width: 50%;
         padding-left: 50px;
+        margin-left: 0px;
     }
 }
+
 .wrapper2{
     width: 80%;
     margin: 0 auto;
 }
 
 .detail{
+    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
     span{
         display: flex;
     }
@@ -83,14 +90,12 @@
         font-size: 20px;
         background-color: $secondaryColor;
         border-radius: 50%;
-        padding: 10px;
+        padding: 0.5em 0.6em;
         margin-right: 20px;
         z-index: 10;
     }
-    h3{
+    h4{
         align-self: center;
-        text-transform: uppercase;
-        font-size: 32px;
     }
     .moreInfo{
         width: calc(50% - 20px);
@@ -105,6 +110,9 @@
 
 .box6{
     background-image: url(../captured-final-assets/banner.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
     height: 400px;
     margin-bottom: 100px;
 }
@@ -116,10 +124,6 @@
     .content{
         width: 50%;
         margin: 0 auto;
-    }
-    h3{
-        text-transform: uppercase;
-        font-size: 32px;
     }
     .boxes{
         position: relative;
@@ -140,19 +144,14 @@
     }
 }
 
-.gallery{
-   display: grid; 
-   grid-template-columns: 1fr 1fr 1fr;
-   grid-gap: 20px;
-}
-
-footer{
-    background-color: $blackColor;
-    text-align: center;
-    color: white;
-    p{
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-size: 15px;
+.background{
+    background-color: $whiteColor;
+    .gallery{
+       display: grid; 
+       grid-template-columns: 1fr 1fr 1fr;
+       grid-gap: 20px;
+       margin-top: 100px;
+       margin-bottom: 100px;
     }
 }
+

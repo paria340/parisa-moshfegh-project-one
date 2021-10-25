@@ -3,16 +3,19 @@
         display: flex;
         flex-direction: column;
         background-image: url(../captured-final-assets/blog-header.jpg);
+        background-position: center;
+        background-size: cover;
         background-repeat: no-repeat;
         height: 70vh;
         width: 100%;
-        justify-content: space-around;
     }
     h2{
-        text-transform: uppercase;
         text-align: center;
-        font-size: 80px;
-        line-height: 92px;
+        position: absolute;
+        top: -150px;
+    }
+    p{
+        padding-top: 30px;
     }
 }
 
@@ -24,9 +27,8 @@
         width:50%;
         position: relative;
         top: -200px;
+        margin-right: 20px;
         h3{
-            font-size: 32px;
-            letter-spacing: 1px;
             margin-top: 30px;
         }
         span{
@@ -49,11 +51,11 @@
             background-position: center;
             background-repeat: no-repeat;
             position: absolute;
-            width: 100%;
+            width: 95%;
             height: 400px;
             top: -40px;
-            left: 30px;
-
+            right: 0;
+            left: 50px;
         }
     }
     .DieulaPost{
@@ -102,11 +104,14 @@
                 margin-right: 20px;
                 padding-top: 20px;
                 padding-bottom: 20px;
+                padding-left: 10px;
+                color: black;
             }
             input[type="text"]::placeholder{
-                color: black;
+                // color: black;
                 font-size: 20px;
                 line-height: 32px;
+                
             }
             input[type="email"]{
                 margin-right: 0;
@@ -114,22 +119,22 @@
         }
         textarea{
             border: 1px solid $secondaryColor;
+            color: $blackColor;
             resize: none;
             height: 200px;
             width: 90%;
             font-size: 20px;
             padding-top: 20px;
             padding-left: 20px;
+            background-color: $tertiaryColor;
         }
         button{
             width: 90%;
-            margin-top: 50px;
+            margin-top: 30px;
             margin-right: 0px;
             margin-left: 0px;
             align-self: flex-start;
             font-size: 20px;
-            text-transform: uppercase;
-            font-family: $baseFont;
         }
     }
     .boxLeft{
@@ -138,7 +143,7 @@
         display: flex;
         flex-direction: column;
         margin-top: 100px;
-        // position: relative;
+        position: relative;
         .photoContainer{
             background-image: url(../captured-final-assets/side-blog-image.jpg);
             background-repeat: no-repeat;
@@ -147,16 +152,20 @@
             width: 80%;
             height: 10%;
             align-self: flex-start;
+            z-index: 10;
             // position: absolute;
         }
         .aboutCaptured{
             align-self: flex-end;
-            background-color: $tertiaryColor;
-            width: 60%;
+            background-color: $whiteColor;
+            width: 70%;
+            padding-left: 30px;
+            padding-right: 30px;
+            padding-top: 100px;
+            position: absolute;
+            top: 120px;
             h4{
-                font-size: 26px;
                 margin-top: 20px;
-                text-transform: uppercase;
             }
             p a{
                 text-decoration: none;

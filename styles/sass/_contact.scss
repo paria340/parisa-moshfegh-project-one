@@ -1,62 +1,66 @@
-.contactLayout{
+.contactHeader{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-}
-.boxLeft2{
-    // align-self: flex-end;
-    width: 30%;
-    margin-top: 100px;
-    margin-left: 100px;
-    i{
-        font-size: 20px;
-        padding-right: 20px;
-    }
-    h4{
-        font-size: 26px;
-        letter-spacing: 1px;
-        margin-top: 30px;
-        text-transform: uppercase;
-    }
-    p{
-        font-family: $bodyFont;
-        font-size: 20px;
-        line-height: 32px;
-        padding-top: 0;
-        margin-top: 10px;
-    }
-}
-.contact{
-    display: flex;
-    flex-wrap: wrap;
-    // justify-content: space-around;
-    position: relative;
     background-image: url(../captured-final-assets/contact-header.jpg);
+    background-position: center;
+    background-size: cover;
     background-repeat: no-repeat;
     height: 70vh;
     width: 100%;
-    
+}
+
+.contact{
+    .flexContainerTwo{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .boxLeft2{
+        margin-left: 60px;
+        width: 30%;
+        margin-top: 100px;
+        
+        i{
+            font-size: 20px;
+            padding-right: 20px;
+        }
+        h4{
+            margin-top: 30px;
+        }
+        p{
+            padding-top: 0;
+            margin-top: 10px;
+        }
+    }
     .boxRight2{
+        width:60%;
+        margin-right: 20px;
         position: absolute;
-        top: 50%;
-        left: 50%;
-        h2{
-            font-family: $baseFont;
-            font-size: 80px;
-            line-height: 92px;
-            text-transform: uppercase;
+        top: 180px;
+        right: 0;
+        .contactPhotoShade{
+            background-color: $primaryColor;
+            width: 80%;
+            height: 550px;
+            z-index: -10;
+            
         }
         .getInTouch{
+            background-color: $whiteColor;
             display: flex;
             flex-wrap: wrap;
             flex-direction: column;
             margin-left: 30px;
-            margin-top: 100px;
-            border-left: 20px solid $primaryColor;
-            border-bottom: 20px solid $primaryColor;
+            margin-top: 50px;
+            padding-left: 50px;
+            padding-bottom: 50px;
+            position: absolute;
+            top: 40px;
+            width: 600px;
+            
             .nameEmail{
                 width: 100%;
                 margin-bottom: 30px;
+                margin-top: 100px;
             input[type="text"],
             input[type="email"]{
                 width: calc(100% / 2 - 40px);
@@ -64,6 +68,7 @@
                 border: none;
                 border-bottom: 1px solid $secondaryColor;
                 background-color: $tertiaryColor;
+                padding-left: 10px;
             }
             input[type="text"]{
                 margin-right: 20px;
@@ -74,6 +79,7 @@
                 color: black;
                 font-size: 20px;
                 line-height: 32px;
+                background-color: $whiteColor;
             }
             input[type="email"]{
                 margin-right: 0;
@@ -87,6 +93,7 @@
             font-size: 20px;
             padding-top: 20px;
             padding-left: 20px;
+            background-color: $whiteColor;
         }
         button{
             width: 90%;
@@ -95,9 +102,10 @@
             margin-left: 0px;
             align-self: flex-start;
             font-size: 20px;
-            text-transform: uppercase;
-            font-family: $baseFont;
         }
         }
     }
 }
+
+
+

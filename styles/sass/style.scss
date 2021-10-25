@@ -1,7 +1,8 @@
 
 $primaryColor: #FDFA69;
 $secondaryColor: #4CEEA7;
-$tertiaryColor: #effdf3;
+$tertiaryColor: #EFFDF3;
+$whiteColor:#FAFAFA;
 $blackColor: #2C2C2C;
 $baseFont: 'Playfair Display', serif;
 $bodyFont: 'Roboto', sans-serif;
@@ -9,6 +10,91 @@ $bodyFont: 'Roboto', sans-serif;
 
 @import 'normalized';
 @import 'header';
-@import 'sectionHome';
+@import 'sectionAbout';
 @import 'blog';
 @import 'contact';
+@import 'tablet';
+@import 'mobile';
+
+html{
+    font-family: $baseFont;
+}
+
+h1{
+    font-size: 138px;
+    align-self: center;
+    text-align: center;
+    text-transform: uppercase;
+    z-index: 10;
+}
+
+h2{
+    font-size: 80px;
+    line-height: 92px;
+    text-transform: uppercase;
+}
+
+h3{
+    font-size: 42px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h4{
+    font-size: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h5{
+    font-size: 26px;
+    letter-spacing: 1.1px;
+    text-transform: uppercase;
+}
+
+p{
+    font-family: $bodyFont;
+    font-size: 20px;
+    line-height: 32px;
+}
+
+button{
+    font-family: $baseFont;
+    background-color: $secondaryColor;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    justify-content: flex-end;
+    padding-top: 20px;
+    margin-right: 20px;
+    a{
+        text-decoration: none;
+        padding: 0 10px;
+        color: black;
+        font-size: 20px;
+        margin-right: 30px;
+
+        &:hover{
+            text-decoration: underline 2px $secondaryColor;
+            text-underline-offset: 10px;
+        }
+    }
+}
+
+footer{
+    background-color: $blackColor;
+    text-align: center;
+    color: white;
+    p{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}

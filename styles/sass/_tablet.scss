@@ -1,0 +1,33 @@
+@media (max-width: 940px){
+    header{
+        .burgerContainer{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        li{
+            visibility: hidden;
+        }
+
+        i{
+            visibility: visible;
+            font-size: 50px;
+            color: $primaryColor;
+            margin-top: 50px;
+            margin-right: 50px;
+
+            &:hover{
+                color: cadetblue;
+                .burgerContainer li{
+                    visibility: visible;
+                }
+            }
+        }
+        .box1{
+            visibility: hidden;
+        }
+        h1{
+            font-size: 80px;
+        }
+    }
+}

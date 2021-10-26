@@ -1,12 +1,15 @@
 header{
     background-image: url(../captured-final-assets/header-image.jpg);
     background-size: cover;
-    height: 90vh;
     position: center;
     background-repeat: no-repeat;
     position: relative;
+    height: 90vh;
     .burgerContainer {
         visibility: hidden;
+    }
+    ul{
+        margin-top: -30px;
     }
 }
 
@@ -14,7 +17,7 @@ header .title{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    height: 85%;
+    height: 80vh;
 }
 
 header .box1{
@@ -45,13 +48,16 @@ header .box1{
     h2{
         text-align: center;
     }
+    h3{
+        align-self: center;
+    }
     p{
         padding-top: 30px;
     }
     button{
+        align-self: center;
         padding: 10px 20px;
         margin-top: 30px;
-        align-self: center;
     }
 }
 

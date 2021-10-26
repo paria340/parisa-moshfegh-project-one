@@ -1,13 +1,6 @@
 .blog{
     .blogHeader{
-        display: flex;
-        flex-direction: column;
         background-image: url(../captured-final-assets/blog-header.jpg);
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
-        height: 70vh;
-        width: 100%;
     }
     h2{
         text-align: center;
@@ -24,8 +17,8 @@
     flex-wrap: wrap;
     justify-content: space-between;
     .boxRight{
-        width:50%;
         position: relative;
+        width:50%;
         top: -200px;
         margin-right: 20px;
         h3{
@@ -44,7 +37,6 @@
             width: 100%;
             height: 400px;
             z-index: -10;
-            // position: absolute;
         }
         .blogPhoto{
             background-image: url(../captured-final-assets/blog-post-image.jpg);
@@ -65,6 +57,7 @@
     }
     .comments{
         margin-left: 30px;
+        margin-top: 30px;
     }
     .comment1,
     .comment2{
@@ -73,9 +66,9 @@
         margin-top: 40px;
         .picture1,
         .picture2{
+            align-self: center;
             width: 10%;
             height: 5%;
-            align-self: center;
             margin-right: 30px;
         }
         p{
@@ -92,23 +85,11 @@
         .nameEmail{
             width: 100%;
             margin-bottom: 30px;
-            input[type="text"],
-            input[type="email"]{
-                width: calc(100% / 2 - 40px);
-                resize: none;
-                border: none;
-                border-bottom: 1px solid $secondaryColor;
+            input[type="text"]{
                 background-color: $tertiaryColor;
             }
-            input[type="text"]{
-                margin-right: 20px;
-                padding-top: 20px;
-                padding-bottom: 20px;
-                padding-left: 10px;
-                color: black;
-            }
+
             input[type="text"]::placeholder{
-                // color: black;
                 font-size: 20px;
                 line-height: 32px;
                 
@@ -118,51 +99,43 @@
             }
         }
         textarea{
-            border: 1px solid $secondaryColor;
-            color: $blackColor;
-            resize: none;
-            height: 200px;
-            width: 90%;
-            font-size: 20px;
-            padding-top: 20px;
-            padding-left: 20px;
             background-color: $tertiaryColor;
+            // color: $blackColor;
         }
         button{
+            align-self: flex-start;
             width: 90%;
             margin-top: 30px;
             margin-right: 0px;
             margin-left: 0px;
-            align-self: flex-start;
             font-size: 20px;
         }
     }
     .boxLeft{
-        width: 40%;
-        margin-right: 50px;
         display: flex;
         flex-direction: column;
-        margin-top: 100px;
         position: relative;
+        width: 40%;
+        margin-right: 50px;
+        margin-top: 100px;
         .photoContainer{
             background-image: url(../captured-final-assets/side-blog-image.jpg);
             background-repeat: no-repeat;
             background-position: center;
             background-size: cover;
+            align-self: flex-start;
             width: 80%;
             height: 10%;
-            align-self: flex-start;
             z-index: 10;
-            // position: absolute;
         }
         .aboutCaptured{
-            align-self: flex-end;
             background-color: $whiteColor;
+            align-self: flex-end;
+            position: absolute;
             width: 70%;
             padding-left: 30px;
             padding-right: 30px;
             padding-top: 100px;
-            position: absolute;
             top: 120px;
             h4{
                 margin-top: 20px;
@@ -173,12 +146,15 @@
                 font-style: italic;
                 font-weight: bold;
             }
+            .secondSection{
+                margin-top: 40px;
+            }
             .secondSection ul{
-                margin-top: 20px;
                 font-family: $bodyFont;
-                font-size: 20px;
                 list-style-position: inside;
                 list-style: none;
+                margin-top: 20px;
+                font-size: 20px;
                 li{
                     padding-bottom: 10px;
                 }

@@ -1,33 +1,88 @@
+@media (max-width: 1240px){
+    h1{
+        font-size: 100px;
+    }
+    .backgroundOne,
+    .backgroundTwo{
+        display: none;
+    }
+    .zigzagContent{
+        justify-content: center;
+        .box2 .imageOne{
+            position: inherit;
+            border-left: 20px solid $primaryColor;
+            width: 100%;
+            margin-bottom: 100px;
+        }
+        .box4 .imageTwo{
+            display: none;
+        }
+        .box3,
+        .box5{
+            width: 100%;
+            text-align: center;
+            direction: ltr;
+        }
+    }
+    h2{
+        font-size: 72px;
+    }
+    h3{
+        font-size: 32px;
+    }
+    h4{
+        font-size: 22px;
+    }
+    .photoContainer{
+        display: none;
+    }
+    .aboutCaptured{
+        left: 0;
+        top: 0;
+
+    }
+    .flexContainerTwo .boxLeft2{
+        margin-left: 50px;
+    }
+}
+
+
 @media (max-width: 940px){
     header{
-        .burgerContainer{
-            display: flex;
-            justify-content: flex-end;
+        .title{
+            position: relative;
         }
-
-        li{
-            visibility: hidden;
+        h1{
+           align-self: flex-end;
+           position: absolute;
+           top: 90%;
+           font-size: 80px; 
         }
-
+        ul{
+            display: none;
+        }
         i{
             visibility: visible;
             font-size: 50px;
             color: $primaryColor;
             margin-top: 50px;
             margin-right: 50px;
-
+            float: right;
+            transition: 0.2s linear all;
             &:hover{
-                color: cadetblue;
-                .burgerContainer li{
-                    visibility: visible;
-                }
+                color: lightcoral;
             }
+        }
+        i:hover li.ul{
+            display: inline-block;
+            margin-top: 50px;
+            color: lightcoral;
         }
         .box1{
             visibility: hidden;
         }
-        h1{
-            font-size: 80px;
-        }
+    }
+    .box8{
+        display: none;
     }
 }

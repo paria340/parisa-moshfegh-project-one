@@ -8,9 +8,9 @@
         padding-top: 30px;
     }
     button{
+        align-self: center;
         padding: 10px 20px;
         margin-top: 30px;
-        align-self: center;
     }
 }
 
@@ -18,7 +18,7 @@
     background-color: $whiteColor;
 }
 
-.zigzagcontent{
+.zigzagContent{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -28,16 +28,16 @@
         position: relative;
         .imageOne, .imageTwo{
             object-fit: cover;
+            position: absolute;
             width: 500px;
             height: 350px;
             z-index: 10;
-            position: absolute;
         }
         .backgroundOne{
             background-color: $primaryColor;
+            position: absolute;
             width: 500px;
             height: 350px;
-            position: absolute;
             top: 30px;
             left: 30px;
             
@@ -50,19 +50,19 @@
     }
     .box4{
         position: relative;
-        .imageTwo2{
+        .imageTwo{
+            position: relative;
             width: 500px;
             height: 350px;
             z-index: 10;
-            position: relative;
         }
         .backgroundTwo{
             background-color: $primaryColor;
-            width: 500px;
-            height: 350px;
             position: absolute;
             top: 30px;
             right: 35px;
+            width: 500px;
+            height: 350px;
         }
     }
     .box5{
@@ -79,16 +79,16 @@
 }
 
 .detail{
-    margin-top: 50px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    margin-top: 50px;
     span{
         display: flex;
     }
     i{
-        font-size: 20px;
         background-color: $secondaryColor;
+        font-size: 20px;
         border-radius: 50%;
         padding: 0.5em 0.6em;
         margin-right: 20px;
@@ -98,9 +98,9 @@
         align-self: center;
     }
     .moreInfo{
-        width: calc(50% - 20px);
         display: flex;
         flex-wrap: wrap;
+        width: calc(50% - 20px);
     }
     p{
         margin-bottom: 50px;
@@ -112,7 +112,7 @@
     background-image: url(../captured-final-assets/banner.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: cover;
     height: 400px;
     margin-bottom: 100px;
 }

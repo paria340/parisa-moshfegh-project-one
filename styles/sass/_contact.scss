@@ -3,6 +3,9 @@
 }
 
 .contact{
+    i{
+       visibility: hidden; 
+    }
     .flexContainerTwo{
         display: flex;
         flex-wrap: wrap;

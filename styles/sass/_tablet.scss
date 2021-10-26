@@ -55,34 +55,102 @@
         h1{
            align-self: flex-end;
            position: absolute;
-           top: 90%;
+           top: 40%;
            font-size: 80px; 
-        }
-        ul{
-            display: none;
         }
         i{
             visibility: visible;
-            font-size: 50px;
+            font-size: 60px;
             color: $primaryColor;
             margin-top: 50px;
-            margin-right: 50px;
-            float: right;
+            margin-left: 55px;
             transition: 0.2s linear all;
             &:hover{
                 color: lightcoral;
             }
         }
-        i:hover li.ul{
-            display: inline-block;
-            margin-top: 50px;
-            color: lightcoral;
+        ul{
+            display: block;
+            padding-top: 30px;
+            li{
+                padding-top: 50px;
+                padding-left: 50px;
+            }
         }
+
         .box1{
             visibility: hidden;
         }
     }
     .box8{
         display: none;
+    }
+    .blog{
+        i{
+            display: inline;
+            font-size: 60px;
+            color: $primaryColor;
+            margin-top: 50px;
+            margin-left: 55px;
+            transition: 0.2s linear all;
+            &:hover{
+                color: lightcoral;
+            }
+        }
+        ul{
+            display: block;
+            padding-top: 30px;
+            li{
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+        }
+        .flexContainer{
+            flex-direction: column;
+            .boxLeft{
+                order: 2;
+                width: 90%;
+                margin-top: 0;
+                margin-bottom: 30px;
+                align-self: center;
+                margin-top: 50px;
+                .aboutCaptured{
+                position: inherit;
+                align-self: inherit;
+                top: 0;
+                padding-top: 50px;
+                }
+            }
+            .boxRight{
+                width: 90%;
+                align-self: center;
+                order: 1;
+                top: 0;
+                h2{
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .contact{
+        i{
+            visibility: visible;
+            font-size: 60px;
+            color: $primaryColor;
+            margin-top: 50px;
+            margin-left: 55px;
+            transition: 0.2s linear all;
+            &:hover{
+                color: lightcoral;
+            }
+        }
+        ul{
+            display: block;
+            padding-top: 30px;
+            li{
+                padding-top: 50px;
+                padding-left: 50px;
+            }
+        }
     }
 }

@@ -1140,6 +1140,10 @@ footer p {
   }
 }
 @media (max-width: 480px) {
+  body {
+    width: 100%;
+  }
+
   header i {
     font-size: 50px;
   }
@@ -1200,16 +1204,19 @@ footer p {
     margin-bottom: 50px;
   }
 
+  .blog ul {
+    margin-top: 0px;
+    padding-top: 0px;
+  }
+  .blog ul li {
+    padding-top: 20px;
+  }
+  .blog ul a {
+    font-size: 18px;
+  }
   .blog .flexContainer .aboutCaptured {
     width: 90%;
     background-color: #EFFDF3;
-  }
-  .blog .flexContainer .aboutCaptured ul {
-    margin-top: 0px;
-  }
-  .blog .flexContainer .aboutCaptured ul li {
-    padding-top: 20px;
-    padding-left: 10px;
   }
   .blog .flexContainer .comments img {
     width: 20%;

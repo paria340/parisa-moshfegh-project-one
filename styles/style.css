@@ -257,11 +257,11 @@ header {
   position: relative;
   height: 90vh;
 }
-header .burgerContainer {
+header i {
   visibility: hidden;
 }
-header ul {
-  margin-top: -30px;
+header ul li {
+  padding-top: 10px;
 }
 
 header .title {
@@ -1143,6 +1143,12 @@ footer p {
   header i {
     font-size: 50px;
   }
+  header ul {
+    padding-top: 0px;
+  }
+  header ul li {
+    padding-top: 20px;
+  }
   header ul a {
     font-size: 18px;
   }
@@ -1192,6 +1198,21 @@ footer p {
     grid-template-columns: 1fr 1fr;
     margin-top: 50px;
     margin-bottom: 50px;
+  }
+
+  .blog .flexContainer .aboutCaptured {
+    width: 90%;
+    background-color: #EFFDF3;
+  }
+  .blog .flexContainer .aboutCaptured ul {
+    margin-top: 0px;
+  }
+  .blog .flexContainer .aboutCaptured ul li {
+    padding-top: 20px;
+    padding-left: 10px;
+  }
+  .blog .flexContainer .comments img {
+    width: 20%;
   }
 
   .contact i {

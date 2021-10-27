@@ -5,11 +5,11 @@ header{
     background-repeat: no-repeat;
     position: relative;
     height: 90vh;
-    .burgerContainer {
+    i {
         visibility: hidden;
     }
-    ul{
-        margin-top: -30px;
+    ul li{
+        padding-top: 10px;
     }
 }
 

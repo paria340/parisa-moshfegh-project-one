@@ -1,7 +1,4 @@
 @media(max-width: 480px){
-    body{
-        width: 100%;
-    }
     header{
         i{
             font-size: 50px;
@@ -85,6 +82,8 @@
         }
         ul{ 
             padding-top: 0;
+            z-index: 10;
+            position: relative;
             li{
                 padding-left: 30px;
                 padding-top: 20px;
@@ -97,6 +96,7 @@
             flex-direction: column;
         }
         .boxRight2{
+            order: -10;
             h2{
                 font-size: 50px;
                 text-align: center;
@@ -109,6 +109,7 @@
                 display: none;
             }
             .getInTouch{
+                box-shadow: none;
                 top: 150px;
                 width: 100%;
                 margin-left: 0px;

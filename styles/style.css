@@ -350,7 +350,7 @@ header .box1 {
 }
 
 .containerZigzag {
-  background-color: #FAFAFA;
+  background-color: #EFFDF3;
 }
 
 .zigzagContent {
@@ -779,7 +779,8 @@ header .box1 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  position: absolute;
+  -webkit-box-shadow: -50px 50px #FDFA69;
+          box-shadow: -50px 50px #FDFA69;
   margin-left: 30px;
   margin-top: 50px;
   padding-left: 50px;
@@ -838,6 +839,10 @@ header .box1 {
 
 html {
   font-family: "Playfair Display", serif;
+}
+
+body {
+  overflow-x: hidden;
 }
 
 h1 {
@@ -1144,10 +1149,6 @@ header i :focus {
   }
 }
 @media (max-width: 480px) {
-  body {
-    width: 100%;
-  }
-
   header i {
     font-size: 50px;
   }
@@ -1233,6 +1234,8 @@ header i :focus {
   }
   .contact ul {
     padding-top: 0;
+    z-index: 10;
+    position: relative;
   }
   .contact ul li {
     padding-left: 30px;
@@ -1248,6 +1251,9 @@ header i :focus {
             flex-direction: column;
   }
   .contact .boxRight2 {
+    -webkit-box-ordinal-group: -9;
+        -ms-flex-order: -10;
+            order: -10;
     width: 90%;
   }
   .contact .boxRight2 h2 {
@@ -1261,6 +1267,8 @@ header i :focus {
     display: none;
   }
   .contact .boxRight2 .getInTouch {
+    -webkit-box-shadow: none;
+            box-shadow: none;
     top: 150px;
     width: 100%;
     margin-left: 0px;

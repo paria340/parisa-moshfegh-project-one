@@ -18,6 +18,10 @@ html{
     font-family: $baseFont;
 }
 
+body{
+    overflow-x: hidden;
+}
+
 h1{
     align-self: center;
     text-align: center;

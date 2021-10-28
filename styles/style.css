@@ -740,6 +740,7 @@ header .box1 {
   margin-top: 100px;
 }
 .contact .boxLeft2 i {
+  visibility: inherit;
   font-size: 20px;
   padding-right: 20px;
 }
@@ -992,9 +993,9 @@ footer p {
   }
   .zigzagContent .box3,
 .zigzagContent .box5 {
-    width: 100%;
     text-align: center;
     direction: ltr;
+    width: 100%;
   }
 
   h2 {
@@ -1035,14 +1036,15 @@ footer p {
   }
   header i {
     visibility: visible;
-    font-size: 60px;
     color: #FDFA69;
-    margin-top: 50px;
-    margin-left: 55px;
     -webkit-transition: 0.2s linear all;
     transition: 0.2s linear all;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 55px;
   }
-  header i:hover {
+  header i:hover,
+header i :focus {
     color: lightcoral;
   }
   header ul {
@@ -1063,14 +1065,15 @@ footer p {
 
   .blog i {
     display: inline;
-    font-size: 60px;
     color: #FDFA69;
-    margin-top: 50px;
-    margin-left: 55px;
     -webkit-transition: 0.2s linear all;
     transition: 0.2s linear all;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 55px;
   }
-  .blog i:hover {
+  .blog i:hover,
+.blog i :focus {
     color: lightcoral;
   }
   .blog ul {
@@ -1088,14 +1091,14 @@ footer p {
             flex-direction: column;
   }
   .blog .flexContainer .boxLeft {
+    -ms-flex-item-align: center;
+        align-self: center;
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
     width: 90%;
     margin-top: 0;
     margin-bottom: 30px;
-    -ms-flex-item-align: center;
-        align-self: center;
     margin-top: 50px;
   }
   .blog .flexContainer .boxLeft .aboutCaptured {
@@ -1120,14 +1123,15 @@ footer p {
 
   .contact i {
     visibility: visible;
-    font-size: 60px;
-    color: #FDFA69;
-    margin-top: 50px;
-    margin-left: 55px;
     -webkit-transition: 0.2s linear all;
     transition: 0.2s linear all;
+    color: #FDFA69;
+    font-size: 60px;
+    margin-top: 50px;
+    margin-left: 55px;
   }
-  .contact i:hover {
+  .contact i:hover,
+.contact i :focus {
     color: lightcoral;
   }
   .contact ul {
@@ -1153,7 +1157,7 @@ footer p {
   header ul li {
     padding-top: 20px;
   }
-  header ul a {
+  header ul li a {
     font-size: 18px;
   }
   header h1 {
@@ -1211,7 +1215,7 @@ footer p {
   .blog ul li {
     padding-top: 20px;
   }
-  .blog ul a {
+  .blog ul li a {
     font-size: 18px;
   }
   .blog .flexContainer .aboutCaptured {
@@ -1224,7 +1228,7 @@ footer p {
 
   .contact i {
     font-size: 50px;
-    margin-top: 40px;
+    margin-top: 60px;
     margin-left: 40px;
   }
   .contact ul {

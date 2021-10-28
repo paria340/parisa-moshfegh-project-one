@@ -19,9 +19,9 @@
         }
         .box3,
         .box5{
-            width: 100%;
             text-align: center;
             direction: ltr;
+            width: 100%;
         }
     }
     h2{
@@ -60,12 +60,13 @@
         }
         i{
             visibility: visible;
-            font-size: 60px;
             color: $primaryColor;
+            transition: 0.2s linear all;
+            font-size: 60px;
             margin-top: 50px;
             margin-left: 55px;
-            transition: 0.2s linear all;
-            &:hover{
+            &:hover,
+            :focus{
                 color: lightcoral;
             }
         }
@@ -88,12 +89,13 @@
     .blog{
         i{
             display: inline;
-            font-size: 60px;
             color: $primaryColor;
+            transition: 0.2s linear all;
+            font-size: 60px;
             margin-top: 50px;
             margin-left: 55px;
-            transition: 0.2s linear all;
-            &:hover{
+            &:hover,
+            :focus{
                 color: lightcoral;
             }
         }
@@ -108,11 +110,11 @@
         .flexContainer{
             flex-direction: column;
             .boxLeft{
+                align-self: center;
                 order: 2;
                 width: 90%;
                 margin-top: 0;
                 margin-bottom: 30px;
-                align-self: center;
                 margin-top: 50px;
                 .aboutCaptured{
                 position: inherit;
@@ -135,12 +137,13 @@
     .contact{
         i{
             visibility: visible;
-            font-size: 60px;
+            transition: 0.2s linear all;
             color: $primaryColor;
+            font-size: 60px;
             margin-top: 50px;
             margin-left: 55px;
-            transition: 0.2s linear all;
-            &:hover{
+            &:hover,
+            :focus{
                 color: lightcoral;
             }
         }

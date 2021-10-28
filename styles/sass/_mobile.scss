@@ -8,12 +8,12 @@
         }
         ul{
             padding-top: 0px;
-        }
-        ul li{
-            padding-top: 20px;
-        }
-        ul a{
-            font-size: 18px;
+            li{
+                padding-top: 20px;
+                a{
+                    font-size: 18px; 
+                }
+            }
         }
         h1{
             font-size: 70px;
@@ -60,12 +60,12 @@
         ul{
             margin-top: 0px;
             padding-top: 0px;
-        }
-        ul li{
-            padding-top: 20px;
-        }
-        ul a{
-            font-size: 18px;
+            li{
+                padding-top: 20px;
+                a{
+                    font-size: 18px;
+                }
+            }
         }
         .flexContainer{
             .aboutCaptured{
@@ -80,7 +80,7 @@
     .contact{
         i{
             font-size: 50px;
-            margin-top: 40px;
+            margin-top: 60px;
             margin-left: 40px;
         }
         ul{ 

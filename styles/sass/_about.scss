@@ -15,7 +15,7 @@
 }
 
 .containerZigzag{
-    background-color: $tertiaryColor;
+    background-color: $whiteColor;
 }
 
 .zigzagContent{
@@ -25,22 +25,15 @@
     margin-bottom: 150px;
     margin-top: 50px;
     .box2{
-        position: relative;
+        .imageOne{
+            box-shadow: 40px 40px $primaryColor;
+        }
         .imageOne, .imageTwo{
             object-fit: cover;
             position: absolute;
             width: 500px;
             height: 350px;
             z-index: 10;
-        }
-        .backgroundOne{
-            background-color: $primaryColor;
-            position: absolute;
-            width: 500px;
-            height: 350px;
-            top: 30px;
-            left: 30px;
-            
         }
     }
     .box3{
@@ -49,20 +42,12 @@
         margin-right: 100px;
     }
     .box4{
-        position: relative;
         .imageTwo{
+            box-shadow: -40px 40px $primaryColor;
             position: relative;
             width: 500px;
             height: 350px;
             z-index: 10;
-        }
-        .backgroundTwo{
-            background-color: $primaryColor;
-            position: absolute;
-            top: 30px;
-            right: 35px;
-            width: 500px;
-            height: 350px;
         }
     }
     .box5{

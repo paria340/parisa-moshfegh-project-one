@@ -350,7 +350,7 @@ header .box1 {
 }
 
 .containerZigzag {
-  background-color: #EFFDF3;
+  background-color: #FAFAFA;
 }
 
 .zigzagContent {
@@ -365,8 +365,9 @@ header .box1 {
   margin-bottom: 150px;
   margin-top: 50px;
 }
-.zigzagContent .box2 {
-  position: relative;
+.zigzagContent .box2 .imageOne {
+  -webkit-box-shadow: 40px 40px #FDFA69;
+          box-shadow: 40px 40px #FDFA69;
 }
 .zigzagContent .box2 .imageOne, .zigzagContent .box2 .imageTwo {
   -o-object-fit: cover;
@@ -376,35 +377,18 @@ header .box1 {
   height: 350px;
   z-index: 10;
 }
-.zigzagContent .box2 .backgroundOne {
-  background-color: #FDFA69;
-  position: absolute;
-  width: 500px;
-  height: 350px;
-  top: 30px;
-  left: 30px;
-}
 .zigzagContent .box3 {
   width: 50%;
   padding-left: 100px;
   margin-right: 100px;
 }
-.zigzagContent .box4 {
-  position: relative;
-}
 .zigzagContent .box4 .imageTwo {
+  -webkit-box-shadow: -40px 40px #FDFA69;
+          box-shadow: -40px 40px #FDFA69;
   position: relative;
   width: 500px;
   height: 350px;
   z-index: 10;
-}
-.zigzagContent .box4 .backgroundTwo {
-  background-color: #FDFA69;
-  position: absolute;
-  top: 30px;
-  right: 35px;
-  width: 500px;
-  height: 350px;
 }
 .zigzagContent .box5 {
   direction: rtl;
@@ -538,7 +522,14 @@ header .box1 {
   position: relative;
   width: 50%;
   top: -200px;
-  margin-right: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: column;
+      -ms-flex-pack: column;
+          justify-content: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 .flexContainer .boxRight h3 {
   margin-top: 30px;
@@ -554,18 +545,21 @@ header .box1 {
   background-color: #FDFA69;
   width: 100%;
   height: 400px;
-  z-index: -10;
+  z-index: 10;
 }
 .flexContainer .boxRight .blogPhoto {
   background-image: url(../captured-final-assets/blog-post-image.jpg);
   background-position: center;
   background-repeat: no-repeat;
+  -ms-flex-item-align: end;
+      align-self: flex-end;
   position: absolute;
-  width: 95%;
+  width: 100%;
   height: 400px;
   top: -40px;
   right: 0;
   left: 50px;
+  z-index: 20;
 }
 .flexContainer .DieulaPost {
   border-left: 4px #FDFA69 solid;
@@ -762,12 +756,6 @@ header .box1 {
 .contact .boxRight2 h2 {
   margin-bottom: 50px;
 }
-.contact .boxRight2 .contactPhotoShade {
-  background-color: #FDFA69;
-  width: 80%;
-  height: 500px;
-  z-index: -10;
-}
 .contact .boxRight2 .getInTouch {
   background-color: #FAFAFA;
   display: -webkit-box;
@@ -785,7 +773,6 @@ header .box1 {
   margin-top: 50px;
   padding-left: 50px;
   padding-bottom: 50px;
-  top: 40px;
   width: 650px;
 }
 .contact .boxRight2 .getInTouch .nameEmail {
@@ -977,8 +964,7 @@ footer p {
     font-size: 100px;
   }
 
-  .backgroundOne,
-.backgroundTwo {
+  .backgroundOne {
     display: none;
   }
 
@@ -992,6 +978,8 @@ footer p {
     border-left: 20px solid #FDFA69;
     width: 100%;
     margin-bottom: 100px;
+    -webkit-box-shadow: none;
+            box-shadow: none;
   }
   .zigzagContent .box4 .imageTwo {
     display: none;
@@ -1219,6 +1207,9 @@ header i :focus {
   .blog ul li a {
     font-size: 18px;
   }
+  .blog .flexContainer .boxRight .blogPhoto {
+    width: 90%;
+  }
   .blog .flexContainer .aboutCaptured {
     width: 90%;
     background-color: #EFFDF3;
@@ -1280,5 +1271,17 @@ header i :focus {
   }
   .contact .boxLeft2 i {
     color: black;
+  }
+
+  .wrapper {
+    overflow: hidden;
+  }
+
+  .wrapper2 {
+    overflow: hidden;
+  }
+
+  .box6 {
+    overflow: hidden;
   }
 }

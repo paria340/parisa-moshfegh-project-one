@@ -2,8 +2,7 @@
     h1{
         font-size: 100px;
     }
-    .backgroundOne,
-    .backgroundTwo{
+    .backgroundOne{
         display: none;
     }
     .zigzagContent{
@@ -13,6 +12,7 @@
             border-left: 20px solid $primaryColor;
             width: 100%;
             margin-bottom: 100px;
+            box-shadow: none;
         }
         .box4 .imageTwo{
             display: none;

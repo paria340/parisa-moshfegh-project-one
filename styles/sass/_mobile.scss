@@ -65,6 +65,11 @@
             }
         }
         .flexContainer{
+            .boxRight{
+                .blogPhoto{
+                    width: 90%;
+                }
+            }
             .aboutCaptured{
                 width: 90%;
                 background-color: $tertiaryColor;
@@ -123,5 +128,14 @@
                 color: black;
             }
         }
+    }
+    .wrapper{
+        overflow: hidden;
+    }
+    .wrapper2{
+        overflow: hidden;
+    }
+    .box6{
+        overflow: hidden;
     }
 }

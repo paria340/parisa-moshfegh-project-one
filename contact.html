@@ -28,10 +28,18 @@
             <div class="flexContainerTwo">         
                 <div class="boxLeft2">
                     <div class="logo">
-                        <i class="fab fa-facebook-f"><a href="https://www.facebook.com/"></a></i>
-                        <i class="fab fa-instagram"><a href="https://www.instagram.com/?hl=en"></a></i>
-                        <i class="fab fa-twitter"><a href="https://mobile.twitter.com/?lang=en"></a></i>
-                        <i class="fab fa-whatsapp"><a href="https://www.whatsapp.com/"></a></i>
+                        <a href="https://www.facebook.com/">
+                            <i class="fab fa-facebook-f" href="https://www.facebook.com/"></i>
+                        </a>
+                        <a href="https://www.instagram.com/?hl=en">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://mobile.twitter.com/?lang=en">
+                            <i class="fab fa-twitter"></i>
+                        </a>                        
+                        <a href="https://www.whatsapp.com/">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
                     </div>
                     <h5>info@email.com</h5>
                     <p>123-456-7890</p>
@@ -41,7 +49,6 @@
                 </div>
                 <div class="boxRight2">
                     <h2>Get in touch</h2>
-                    <!-- <div class="contactPhotoShade"></div> -->
                     <form class="getInTouch">
                         <div class="nameEmail">
                             <label for="name" class="sr-only"></label>
@@ -51,6 +58,7 @@
                         </div>                       
                         <label for="message"></label>
                         <textarea name="message" id="message" cols="50" rows="10">Message</textarea>                        
+                        <div class="popUp" id="popUp"></div>
                         <button class="Submit" type="submit">Submit</button>                       
                     </form>
                 </div>
@@ -60,5 +68,6 @@
     <footer>
         <p>Copyright © 2018 HackerYou</p>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>

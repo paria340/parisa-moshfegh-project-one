@@ -1,8 +1,5 @@
 @media(max-width: 480px){
-    header{
-        i{
-            font-size: 50px;
-        }
+    header{   
         ul{
             padding-top: 0px;
             li{
@@ -12,6 +9,15 @@
                 }
             }
         }
+        i{
+            font-size: 50px;
+        }
+
+        i:hover > nav{
+            height: auto;
+            display: block;
+        }
+
         h1{
             font-size: 70px;
             top: 45%;

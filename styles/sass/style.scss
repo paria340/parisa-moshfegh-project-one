@@ -60,6 +60,9 @@ p{
     line-height: 32px;
 }
 
+i:focus{
+    outline: 2px solid green;
+}
 
 .blogHeader,
 .contactHeader{
@@ -91,6 +94,9 @@ nav ul{
             -webkit-text-decoration: underline 3px $secondaryColor;
             text-underline-offset: 10px;
         }
+        &:focus{
+            outline: 2px solid green;
+        }
     }
 }
 
@@ -102,6 +108,14 @@ input[type="text"]{
     margin-right: 20px;
     padding-top: 20px;
     padding-bottom: 20px;
+    transition: linear all 0.2s;
+    &:hover,
+    :focus{
+        transform: scale(1.2);
+    }
+    &:focus{
+        outline: 2px solid green;
+    }
 }
 
 textarea{
@@ -112,6 +126,11 @@ textarea{
     font-size: 20px;
     padding-top: 20px;
     padding-left: 20px;
+    transition: linear all 0.2s;
+    &:hover,
+    :focus{
+        transform: scale(1.2);
+    }
 }
 
 button{
@@ -123,11 +142,33 @@ button{
     font-size: 20px;
     line-height: 32px;
     letter-spacing: 1px;
+    transition: 0.2s linear all;
+    &:hover,
+    :focus{
+        transform: scale(1.2);
+    }
+    &:focus{
+        outline: 2px solid green;
+    }
     a{
         text-decoration: none;
         color: black;
     }
 }
+form{
+    position: relative;
+}
+.popUp{
+    border:5px white solid;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px;
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    display: none;
+}
+
 footer{
     background-color: $blackColor;
     text-align: center;
@@ -135,6 +176,18 @@ footer{
     p{
         padding-top: 10px;
         padding-bottom: 10px;
+    }
+}
+
+a{
+    text-decoration: none;
+    i{
+        color: black;
+        transition: 0.2s linear all;
+        &:hover,
+        :focus{
+            transform: scale(1.2);
+        }
     }
 }
 

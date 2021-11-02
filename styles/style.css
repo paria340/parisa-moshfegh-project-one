@@ -871,6 +871,10 @@ p {
   line-height: 32px;
 }
 
+i:focus {
+  outline: 2px solid green;
+}
+
 .blogHeader,
 .contactHeader {
   display: -webkit-box;
@@ -913,6 +917,9 @@ nav ul a :focus {
   -webkit-text-decoration: underline 3px #4CEEA7;
   text-underline-offset: 10px;
 }
+nav ul a:focus {
+  outline: 2px solid green;
+}
 
 input[type=text] {
   border: none;
@@ -922,6 +929,16 @@ input[type=text] {
   margin-right: 20px;
   padding-top: 20px;
   padding-bottom: 20px;
+  -webkit-transition: linear all 0.2s;
+  transition: linear all 0.2s;
+}
+input[type=text]:hover,
+input[type=text] :focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+input[type=text]:focus {
+  outline: 2px solid green;
 }
 
 textarea {
@@ -932,6 +949,13 @@ textarea {
   font-size: 20px;
   padding-top: 20px;
   padding-left: 20px;
+  -webkit-transition: linear all 0.2s;
+  transition: linear all 0.2s;
+}
+textarea:hover,
+textarea :focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 button {
@@ -943,10 +967,35 @@ button {
   font-size: 20px;
   line-height: 32px;
   letter-spacing: 1px;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+}
+button:hover,
+button :focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+button:focus {
+  outline: 2px solid green;
 }
 button a {
   text-decoration: none;
   color: black;
+}
+
+form {
+  position: relative;
+}
+
+.popUp {
+  border: 5px white solid;
+  background-color: white;
+  text-align: center;
+  border-radius: 20px;
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  display: none;
 }
 
 footer {
@@ -957,6 +1006,20 @@ footer {
 footer p {
   padding-top: 10px;
   padding-bottom: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+a i {
+  color: black;
+  -webkit-transition: 0.2s linear all;
+  transition: 0.2s linear all;
+}
+a i:hover,
+a i :focus {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 @media (max-width: 1240px) {
@@ -1137,9 +1200,6 @@ header i :focus {
   }
 }
 @media (max-width: 480px) {
-  header i {
-    font-size: 50px;
-  }
   header ul {
     padding-top: 0px;
   }
@@ -1148,6 +1208,13 @@ header i :focus {
   }
   header ul li a {
     font-size: 18px;
+  }
+  header i {
+    font-size: 50px;
+  }
+  header i:hover > nav {
+    height: auto;
+    display: block;
   }
   header h1 {
     font-size: 70px;

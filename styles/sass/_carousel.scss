@@ -4,22 +4,23 @@
 
 .carousel img{
     object-fit: cover;
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     padding: 1em;
     background-color: grey;
 }
 
-.carouselNav{
-    width: 100%;
-    padding: 20px 0;
+.prev, 
+.next{
     position: absolute;
-    color: black;
+    top: 50%;
+    font-size: 30px;
+    border-radius: 0 5px 5px 0;
+    user-select: none;
+    padding: 30px;
 }
 
-.carouseButton{
-    display: inline-block;
-    width: 10px;
-    height:10px;
-    border-radius: 50%;
+.next{
+    right: 0;
+    border-radius: 5px 0 0 5px;
 }

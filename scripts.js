@@ -69,6 +69,9 @@ hamburgerIcon.addEventListener('click', function(){
 
 })
 
+//const carouselImg = document.querySelector('.carouselImg') WORK IN PROGRESS 
+
+
 jsAddition.init = function(){
     jsAddition.onSubmit()
 }

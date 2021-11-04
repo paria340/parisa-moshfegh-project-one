@@ -1,0 +1,25 @@
+.carousel{
+    position: relative;
+}
+
+.carousel img{
+    object-fit: cover;
+    height: 200px;
+    width: 200px;
+    padding: 1em;
+    background-color: grey;
+}
+
+.carouselNav{
+    width: 100%;
+    padding: 20px 0;
+    position: absolute;
+    color: black;
+}
+
+.carouseButton{
+    display: inline-block;
+    width: 10px;
+    height:10px;
+    border-radius: 50%;
+}

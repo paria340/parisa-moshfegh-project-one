@@ -827,8 +827,31 @@ header .box1 {
   font-size: 20px;
 }
 
-.wrapperCarousel {
-  background-color: cadetblue;
+.carousel {
+  position: relative;
+}
+
+.carousel img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 200px;
+  padding: 1em;
+  background-color: grey;
+}
+
+.carouselNav {
+  width: 100%;
+  padding: 20px 0;
+  position: absolute;
+  color: black;
+}
+
+.carouseButton {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
 html {

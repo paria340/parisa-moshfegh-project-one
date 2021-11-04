@@ -1,9 +1,9 @@
 
 
-formSubmit = {};
+jsAddition = {};
 
 
-formSubmit.onSubmit = function(){
+jsAddition.onSubmit = function(){
     
     const formEl = document.querySelector('form')
     formEl.addEventListener('submit', function(event){
@@ -69,8 +69,8 @@ hamburgerIcon.addEventListener('click', function(){
 
 })
 
-formSubmit.init = function(){
-    formSubmit.onSubmit()
+jsAddition.init = function(){
+    jsAddition.onSubmit()
 }
 
-formSubmit.init();
+jsAddition.init();

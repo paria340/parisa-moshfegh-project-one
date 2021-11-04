@@ -738,9 +738,12 @@ header .box1 {
   font-size: 20px;
   padding-right: 20px;
 }
-.contact .boxLeft2 h5 {
-  margin-top: 30px;
-  margin-bottom: 30px;
+.contact .boxLeft2 a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: black;
+  font-size: 26px;
+  letter-spacing: 1.1px;
 }
 .contact .boxLeft2 p {
   padding-top: 0;
@@ -824,6 +827,10 @@ header .box1 {
   font-size: 20px;
 }
 
+.wrapperCarousel {
+  background-color: cadetblue;
+}
+
 html {
   font-family: "Playfair Display", serif;
 }
@@ -857,12 +864,6 @@ h4 {
   text-transform: uppercase;
   font-size: 32px;
   letter-spacing: 1px;
-}
-
-h5 {
-  text-transform: uppercase;
-  font-size: 26px;
-  letter-spacing: 1.1px;
 }
 
 p {
@@ -1201,6 +1202,7 @@ header i :focus {
 }
 @media (max-width: 480px) {
   header ul {
+    display: none;
     padding-top: 0px;
   }
   header ul li {
@@ -1265,6 +1267,7 @@ header i :focus {
   }
 
   .blog ul {
+    display: none;
     margin-top: 0px;
     padding-top: 0px;
   }
@@ -1291,6 +1294,7 @@ header i :focus {
     margin-left: 40px;
   }
   .contact ul {
+    display: none;
     padding-top: 0;
     z-index: 10;
     position: relative;

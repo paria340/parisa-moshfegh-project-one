@@ -26,7 +26,6 @@
         display: flex;
         justify-content: column;
         flex-wrap: wrap;
-        // margin-right: 20px;
         h3{
             margin-top: 30px;
         }
@@ -68,12 +67,14 @@
         margin-top: 30px;
     }
     .comment1,
-    .comment2{
+    .comment2,
+    .comment3{
         display: flex;
         flex-wrap: wrap;
         margin-top: 40px;
         .picture1,
-        .picture2{
+        .picture2,
+        .picture3{
             align-self: center;
             width: 10%;
             height: 5%;
@@ -82,6 +83,11 @@
         p{
             width: 70%;
             padding-top: 0;
+        }
+    }
+    .comment3{
+        .picture3{
+            display: none;
         }
     }
     .postComment{
@@ -108,7 +114,6 @@
         }
         textarea{
             background-color: $tertiaryColor;
-            // color: $blackColor;
         }
         button{
             align-self: flex-start;

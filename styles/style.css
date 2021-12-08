@@ -571,7 +571,8 @@ header .box1 {
   margin-top: 30px;
 }
 .flexContainer .comment1,
-.flexContainer .comment2 {
+.flexContainer .comment2,
+.flexContainer .comment3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -581,8 +582,13 @@ header .box1 {
 }
 .flexContainer .comment1 .picture1,
 .flexContainer .comment1 .picture2,
+.flexContainer .comment1 .picture3,
 .flexContainer .comment2 .picture1,
-.flexContainer .comment2 .picture2 {
+.flexContainer .comment2 .picture2,
+.flexContainer .comment2 .picture3,
+.flexContainer .comment3 .picture1,
+.flexContainer .comment3 .picture2,
+.flexContainer .comment3 .picture3 {
   -ms-flex-item-align: center;
       align-self: center;
   width: 10%;
@@ -590,9 +596,13 @@ header .box1 {
   margin-right: 30px;
 }
 .flexContainer .comment1 p,
-.flexContainer .comment2 p {
+.flexContainer .comment2 p,
+.flexContainer .comment3 p {
   width: 70%;
   padding-top: 0;
+}
+.flexContainer .comment3 .picture3 {
+  display: none;
 }
 .flexContainer .postComment {
   display: -webkit-box;

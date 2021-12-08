@@ -24,10 +24,13 @@ jsAddition.onSubmit = function(){
                 
         const popUpAppear = document.querySelector('.popUp')
                 
-    
-        // const commentHolder = document.querySelector('.postcomment')
-        // commentHolder.textContent = textInfo
-        // commentEl.append(commentHolder)
+        const pictureHolder = document.querySelector('.picture3')
+        const commentHolder = document.querySelector('.comment3')
+        const pEl = document.createElement('p')
+        pEl.textContent = textInfo
+        commentHolder.append(pEl)
+        pictureHolder.style.display='inherit'
+        
     
                 
         const popUpEl = document.createElement('h4')
@@ -64,12 +67,12 @@ jsAddition.onSubmit = function(){
 const hamburgerIcon = document.querySelector('.fa')
 const ulList = document.querySelector('.navMenu')
 hamburgerIcon.addEventListener('click', function(){
-    console.log('doogh bokhor')
     document.querySelector('.navMenu').style.display='block'
 
 })
 
-//const carouselImg = document.querySelector('.carouselImg') WORK IN PROGRESS 
+const carouselEl = document.querySelector('.carousel')
+
 
 
 jsAddition.init = function(){

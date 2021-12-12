@@ -71,8 +71,6 @@ hamburgerIcon.addEventListener('click', function(){
 
 })
 
-const carouselEl = document.querySelector('.carousel')
-
 
 
 jsAddition.init = function(){
